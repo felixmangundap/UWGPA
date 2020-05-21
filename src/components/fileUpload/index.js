@@ -17,7 +17,7 @@ const FileUpload = (props) => {
 
   const getFile = (key) => {
     const { setTranscriptData, setUploadState } = props;
-    axios.get(`/api/transcript/${key}`).then(response => {
+    axios.get(`https://1oodc5eyy4.execute-api.us-east-2.amazonaws.com/dev/api/transcript/${key}`).then(response => {
       console.log(response.data);
       setTranscriptData(response.data);
       setUploadState('done');
@@ -32,7 +32,7 @@ const FileUpload = (props) => {
     setUploadState('uploading');
     const formData = new FormData();
     formData.append('file', file[0]);
-    axios.post(`/api/transcript`, formData, {
+    axios.post(`https://1oodc5eyy4.execute-api.us-east-2.amazonaws.com/dev/api/transcript`, formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
