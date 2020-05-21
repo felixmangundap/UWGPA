@@ -1,0 +1,62 @@
+.upload {
+  width: 40%;
+  height: 80%;
+  padding: 15px;
+}
+
+.upload-form {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  position: relative;
+}
+
+.upload-overlay {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: rgba(76, 76, 76, 0.5);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropzone {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 15px;
+  background: #444;
+  border: 2px solid #FDC830;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropzone-text {
+  margin: 0 auto;
+  color: #eee;
+}
+
+.submit-btn {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  background: linear-gradient(90deg, #FDC830, #F37335);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  cursor: default;
+  border: 2px solid #FDC830;
+  border-top: none;
+  background: linear-gradient(90deg, #999, #555);
+}

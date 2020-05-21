@@ -1,0 +1,29 @@
+.banner {
+  width: 60%;
+  padding: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.banner-graphics {
+  text-align: center;
+  height: 30vh;
+}
+
+.banner-info {
+  color: #fff;
+  font-weight: 500;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.banner-disclaimer {
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+}
+
+span.yellow {
+  color: #FDC830
+}
